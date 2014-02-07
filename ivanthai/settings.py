@@ -21,7 +21,7 @@ print BASE_DIR
 STATIC_URL = '/static/'
 # STATIC_ROOT = ''
 
-STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles/')
+STATIC_ROOT= os.path.join(PROJECT_ROOT,'staticfiles/')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -37,12 +37,12 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates/webpage'),
+    os.path.join(PROJECT_ROOT, 'templates/webpage'),
 )
 
 STATICFILES_DIRS = (
     # os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR,'static/'),
+    os.path.join(PROJECT_ROOT,'static/'),
 )
 
 # List of finder classes that know how to find static files in
