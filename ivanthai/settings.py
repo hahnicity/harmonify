@@ -26,9 +26,12 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-TEMPLATE_DIRS = (BASE_DIR + '/webpage/templates/webpage')
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates/webpage'),
+)
 
 STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
