@@ -19,9 +19,9 @@ print BASE_DIR
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = ''
+STATIC_ROOT = ''
 
-STATIC_ROOT= os.path.join(PROJECT_ROOT,'staticfiles/')
+# STATIC_ROOT= os.path.join(PROJECT_ROOT,'staticfiles/')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
