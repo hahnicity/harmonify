@@ -1,1 +1,1 @@
-web: python bamboo/manage.py
+web: gunicorn harmonify.wsgi
